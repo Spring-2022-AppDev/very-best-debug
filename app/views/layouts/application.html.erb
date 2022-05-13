@@ -3,6 +3,7 @@
   <head>
     <title>Very Best Debug</title>
     <%= csrf_meta_tags %>
+    
 
     <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
     <meta charset="utf-8">
@@ -15,6 +16,14 @@
   </head>
 
   <body>
+  <nav>
+    <ul>
+    <li> <a href="/users"> Users </a> </li>
+
+    <li> <a href="/venues"> Venues </a> </li>
+   </ul>
+    </nav>
     <%= yield %>
+  
   </body>
 </html>
